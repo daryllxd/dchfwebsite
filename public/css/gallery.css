@@ -1,0 +1,63 @@
+/* 
+    Document   : gallery
+    Created on : Oct 6, 2012, 9:16:02 PM
+    Author     : Daryll
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#gallery{
+    box-sizing: border-box;   
+    margin: 0 auto;
+}
+
+#gallery .mainImage{    
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#gallery .mainImage img{    
+    float: left;
+
+    width: 100%;
+    z-index: 1;
+}
+
+#gallery .overlay{    
+    background-color: rgba(0,0,0,0.7);
+    bottom: 0px;
+    box-sizing: border-box;   
+    color: white;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#B2000000', endColorstr='#B2000000');  
+    height: 70px;
+    -moz-box-sizing: border-box;
+    padding: 10px 10px;
+    position: absolute;
+    text-align: left;
+    z-index: 999;
+}
+
+#gallery .thumbnails{   
+}
+
+
+#gallery .thumbnails li{    
+   float: left;
+}
+
+#gallery .thumbnails img{    
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;   
+    cursor: pointer;    
+    float: left;
+    height: 144px;
+    -moz-box-sizing: border-box;
+    width: 192px;  
+}
+
+#gallery .thumbnails .active{    
+    border: 5px solid rgb(0,0,0);
+    border: 5px solid rgba(0,0,0,0.7);   
+    
+}

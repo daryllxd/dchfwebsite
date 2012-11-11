@@ -1,0 +1,203 @@
+/* 
+    Document   : core
+    Created on : Sep 29, 2012, 7:21:27 PM
+    Author     : Daryll
+    Description:
+        Purpose of the stylesheet follows.
+
+
+#336600
+#FFFFFF
+#C0C0C0
+*/
+
+@font-face{
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Open Sans Light";
+    src: url(fonts/OpenSans-Light.ttf);
+}
+
+
+root { 
+    display: block;
+}
+
+*{
+    font-family: "Open Sans Light", Arial;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, input, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, select, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Open Sans Light", Arial;
+    vertical-align: baseline;
+}
+
+body {
+    background-image:url("../images/back.png");    
+}
+
+#wrap {
+/*    min-height: 100%;*/
+    overflow:auto;
+}
+
+p {
+    padding-left: 40px;
+}
+h1{    
+    background-repeat: repeat-x;        
+    color: #000000;        
+    font-weight: normal;
+    font-size: 40pt;    
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+    text-shadow: 1px 1px 0px #333333;
+
+}
+
+h2 {
+    background-repeat: repeat-x;        
+    color: #000000;    
+    display: inline-block;
+    font-weight: normal;
+    font-size: 30pt;
+    margin-left: 20px;
+    text-shadow: 1px 1px 0px #333333;
+}
+
+input, select, textArea   {
+    background-color: rgba(255,255,255,0.2);
+    background-position: 5px;
+    background-repeat: no-repeat;
+    background-size: auto 1em;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.25),
+        inset 0px 1px 1px rgba(255,255,255,0.5);
+    color: #000;    
+    font-size: 32px;    
+    margin-right: 20px;   
+    padding-top: 10px;    
+    width: 400px;
+}
+
+input[type="text"], textArea{
+    display: block;
+    float: right; 
+    
+}
+
+select{
+    float: right;
+    -webkit-appearance: none;
+}
+
+input[type="button"] {
+    background-color: rgba(51,102,0,0.25);
+    color: #000;        
+    border: rgba(0,0,0,0.5) solid 1px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.25),
+        inset 0px 1px 1px rgba(255,255,255,0.5);        
+    font-size: 32pt;
+    font-weight: bold;    
+    height: 1.5em;
+    padding: 7px 20px;
+    text-shadow: 0px -1px 1px #000;
+    width: auto;
+}
+
+input[type="button"].tae{
+    background-color: rgba(51,102,0,0.5);
+    margin: 0 10px;    
+}
+
+#output{
+    clear: both;
+}
+
+hr {
+    border-top: 2px solid;
+    color: black;    
+    
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:hover{
+    background-color: rgba(51,102,0,0.45);
+    cursor: pointer;
+}
+input[type="button"]:active,
+input[type="submit"]:active,
+button:active{
+    background-color: rgba(51,102,0,0.65);
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.25),
+        inset 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+input#studentNumber{
+    /*    background-image: url("../images/studentNumber.png");*/
+}
+
+input#fullName{
+    /*    background-image: url("../images/fullName.png");*/
+}
+
+input#college{
+    /*    background-image: url("../images/college.png");*/
+}
+
+#reg {
+    background-color: rgba(30,255,255,0.4);    
+    border: #336600 solid 1px;
+    box-shadow: 5px 10px 10px 3px rgba(0,0,0,0.25);
+    margin: 20px auto 0px auto;   
+    padding: 10px 0 20px 0;
+    width: 1000px;
+
+}
+
+.centerer {
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    width: 900px;
+}
+
+
+#footer {
+    background-color: rgba(51,102,0,0.15);
+    bottom: 0;
+    font-size: 24px;
+    height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;        
+    width: 100%;
+
+}
+
+#footer:hover{
+    background-color: rgba(51,102,0,0.35);
+}
+
+

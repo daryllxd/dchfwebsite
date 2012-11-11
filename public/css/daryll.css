@@ -1,0 +1,220 @@
+/* 
+    Document   : daryll
+    Created on : Sep 6, 2012, 9:56:52 PM
+    Author     : Daryll
+    Description:
+        Purpose of the stylesheet follows.
+
+GREEN : #99cc99
+
+*/
+
+
+
+#container { 
+    display: block;
+    height: auto !important;
+    margin: 0 auto; 
+    padding: 0; 
+    position: relative; 
+    width: 960px; 
+}
+
+/* Header */
+#header-background{
+    background-image: -moz-linear-gradient(top, rgba(153,204,153,0.8), rgba(153,204,153,0.1));
+    background-image: -webkit-linear-gradient(top, rgba(153,204,153,0.8), rgba(153,204,153,0.1));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99cc99', endColorstr='#ffffff');
+    height: 200px;
+    position:absolute;
+    width: 100%;
+}
+
+#header-wrapper {    
+    padding-top: 20px;
+    position: relative; 
+    width: 100%;
+}
+
+#header {
+    height: 120px;
+    margin: 0px 0px 5px;
+    padding: 0px 0px;
+    position: relative; 
+    width: 960px;
+}
+
+#header h1{
+    bottom: 0px;
+    margin-bottom: 0px;
+    display: inline;
+    font-size: 30px;
+    line-height:  36px;
+    position: absolute;
+}
+
+/* Contact details */
+
+#contactDetails{
+    bottom: 40px;    
+    float: right;    
+    position: absolute; 
+    right: 0px;
+}
+
+#contactDetails p{    
+    bottom: 0px;
+    display: block;
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 1.2em;   
+    padding: 2px 0px 0px 0px;
+    text-align: right;
+}
+
+#contactDetails p:last-child{
+    margin-bottom: 0;
+}
+
+/* Menu */
+
+#menu-wrapper {
+    background: #EDEDED;
+    height: 56px;
+    margin: 0px auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+#menu {
+    height: 55px;
+    margin: 0px auto;
+    padding: 0px;
+    width: 960px;
+}
+
+#menu ul {
+    list-style: none;
+    line-height: normal;
+    margin: 0 auto;    
+}
+
+#menu li {
+    box-sizing: border-box;
+    border-right: 1px solid #FFFFFF;
+    display: inline;
+    float: left;
+    margin: 0px;
+    -moz-box-sizing: border-box;
+    padding: 0px;    
+    width: 160px;
+}
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu li a {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 55px;    
+    text-decoration: none;
+    text-align: center;  
+    color: #3B3B3B;
+    border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+    background: #99cc99;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#menu .current_page_item a {
+    background: #99cc99;
+}
+
+/* Boxes */
+
+.boxes{    
+    display: block;
+    height: 360px;
+    padding: 10px 0px 10px 0px;    
+}
+
+/* Boxes columns */
+
+.boxes .threecols{    
+    float: left;
+    height: 100%;
+    margin: 0 10px 0 10px;
+    width: 300px;
+}
+.boxes .threecols:hover{
+    background-color: rgba(153,204,153,0.4);
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.25),
+        inset 0px 1px 1px rgba(255,255,255,0.5);
+}
+.boxes h1{
+    border-top: #EDEDED solid 2px;     
+}
+
+/* Articles */
+
+/* CSS tip - in order to have no default height then don't specify height, just put overflow: hidden to make the css adjust for whatever column is bigger'*/
+.article, .doctors{    
+    display: block;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;    
+    text-align: justify;
+}
+
+.twothirds{
+    float: left;
+    margin: 0 20px 0 0px;
+    width: 569px;
+}
+.onethirds{
+    float: left;
+    margin: 0 10px 0 10px;
+    width: 351px;
+}
+
+/* Footer */
+
+#footer  {
+    background-image: -moz-linear-gradient(top, rgba(255,255,255,0.1), rgba(153,204,153,0.5));
+    background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.1), rgba(153,204,153,0.5));
+    bottom: 0;    
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#99cc99'); /* for IE */    
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+
+}
+
+#footer p {
+    margin: 0;
+    padding-top: 20px;
+    line-height: normal;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#footer a {
+    color: #8A8A8A;
+}
+
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
